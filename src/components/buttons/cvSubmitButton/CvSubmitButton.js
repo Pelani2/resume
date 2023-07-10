@@ -5,7 +5,7 @@ export default function CvSubmitButton({
     text, type
 }) {
     return(
-        <button>
+        <button className="cv-submit-button" >
             {text}
         </button>
     );

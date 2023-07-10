@@ -18,61 +18,66 @@ export default function Home() {
     );
 
     return(
-        <div>
-            <h1>
+        <div className="cv-form-container" >
+            <h1 className="cv-form-title" >
                 CV Form
             </h1>
 
-            <form onSubmit={handleSubmit} >
-                <label>
+            <form onSubmit={handleSubmit} className="cv-form" >
+                <label className="cv-form-label" >
                     First name: 
                     <input
                         type="text"
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
+                        className="cv-form-input"
                     />
                 </label>
 
                 <br />
 
-                <label>
+                <label className="cv-form-label">
                     Last name: 
                     <input 
                         type="text"
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
+                        className="cv-form-input"
                     />
                 </label>
 
                 <br />
 
-                <label>
+                <label className="cv-form-label">
                     Email:
                     <input 
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        className="cv-form-input"
                     />
                 </label>
 
                 <br />
 
-                <label>
+                <label className="cv-form-label">
                     Phone:
                     <input 
                         type="tel"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
+                        className="cv-form-input"
                     />
                 </label>
 
                 <br />
 
-                <label>
+                <label className="cv-form-label">
                     Summary:
                     <textarea
                         value={summary}
                         onChange={(e) => setSummary(e.target.value)}
+                        className="cv-form-textarea"
                     >
 
                     </textarea>
